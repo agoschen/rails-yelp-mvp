@@ -1,0 +1,9 @@
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name, label: 'Restaurant name', error: 'Username is mandatory, please specify one' %>
+  <%= f.input :address, label: 'Restaurant address' %>
+  <%= f.input :phone_number, label: 'Restaurant phone number' %>
+  <%= f.select :category, ["chinese", "italian", "japanese", "french", "belgian"], label: 'Food category' %>
+  <br>
+  <br>
+  <%= f.button :submit, class:"btn btn-secondary" %>
+<% end %>
